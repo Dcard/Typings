@@ -1448,6 +1448,7 @@ declare module "aws-sdk" {
       Message?: string;
       MessageStructure?: string;
       Subject?: string;
+      PhoneNumber?: string;
     }
 
     export interface MessageAttribute {
