@@ -5714,7 +5714,8 @@ declare namespace sequelize {
             autoCallback: (t: Transaction) => Promise<any>): Promise<any>;
         transaction(autoCallback: (t: Transaction) => Promise<any>): Promise<any>;
         transaction(): Promise<Transaction>;
-
+        transaction(options: TransactionOptions): Promise<Transaction>;
+        
         /**
          * Close all connections used by this sequelize instance, and free all references so the instance can be
          * garbage collected.
